@@ -295,7 +295,6 @@ rm dosya
 #### DİKKAT: `rm -rf /` komutu tüm sistemin silinmesine yol açar, sanal makine dışında kullanılması tehlikelidir.
 
 ### t. `tail`
-Outputs the last 10 lines of file. Use `-f` to output appended data as the file grows.  
 Dosyanın son 10 satırını yazdırır. `-f` parametresiyle çıktıyı sona ekler dosya büyüdükçe.
 ```bash
 tail dosya
