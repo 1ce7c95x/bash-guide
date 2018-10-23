@@ -1096,7 +1096,7 @@ nohup komut &
 `shebang` bash programlamanın ilk satırına yazılan belirli text'e denir. Bu satır script'in tek başına sh, bash, python, php gibi programları yazmadan çalışabilmesini sağlar. 
 
 ```bash
-#!/bin/bash
+#!/usr/bin/env bash
 ```
 
 ## 2.1. Değişkenler
