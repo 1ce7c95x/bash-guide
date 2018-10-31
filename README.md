@@ -964,6 +964,10 @@ ping sunucu_ip_or_domain
 ```bash
 ps -u kullanici_adi
 ```
+Use the flags ef. e for every process and f for full listing. 
+```bash
+ps -ef
+```
 
 ### o. `quota`
 Disk kotanı gösterir.  
@@ -1096,7 +1100,7 @@ nohup komut &
 `shebang` bash programlamanın ilk satırına yazılan belirli text'e denir. Bu satır script'in tek başına sh, bash, python, php gibi programları yazmadan çalışabilmesini sağlar. 
 
 ```bash
-#!/bin/bash
+#!/usr/bin/env bash
 ```
 
 ## 2.1. Değişkenler
@@ -1164,7 +1168,7 @@ ${#degisken_ismi}     # değişkenin değerinin uzunluğunu string olarak dönd�
 Tüm programlama dillerinde olduğu gibi, bash'de de fonksiyonları birden fazla satır kodu tek seferde çalıştırmak ve tekrarlamak için kullanbiliriz. Fonksiyon tanımlamak `function my_func { my_code }` yazmak kadar kolay. Fonksiyon çağırmak da başka bir programı çağırmakla aynı şekilde sadece adını yazmanız yeterli.
 
 ```bash
-functname() {
+function name() {
     shell commands
 }
 ```
@@ -1189,7 +1193,7 @@ Yukarıdaki kodu çalıştırdığımızda `hello` fonksiyonu "world!" yazdırac
 
 Bash'deki koşullar diğer programlama dilleri ile aynıdır.  `if` ifadesi doğru ise `then` durumu çalışır.
 ```bash
-if [ifade]; then
+if [ ifade ]; then
     ifade doğru ise çalışacak durum
 else
     ifade yanlış ise çalışacak durum
@@ -1341,6 +1345,11 @@ bash -x script_adi
 - Sorunları bildir [How to](https://help.github.com/articles/creating-an-issue/)
 - Geliştirmeler ile birlikte "pull request" açın [How to](https://help.github.com/articles/about-pull-requests/)
 - Bilginin yayılmasına yardımcı olun.
+
+## Çeviri
+- [İngilizce | Egnlish](https://github.com/Idnan/bash-guide)
+- [Japonca | 日本語](https://github.com/itooww/bash-guide)
+- [Çince | 简体中文](https://github.com/vuuihc/bash-guide)
 
 ## Lisans
 
